@@ -1,5 +1,6 @@
 package br.com.coopbuggy.mcoopbuggy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -12,9 +13,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private Button btnPrecosActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +45,17 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //Chamada pra tela de preços
+        btnPrecosActivity = (Button) findViewById(R.id.nav_precos);
+        btnPrecosActivity.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentPrecos = new Intent(MainActivity.this, PrecoActivity.class);
+                startActivity(intentPrecos);
+            }
+        });
+
     }
 
     @Override
@@ -84,7 +100,7 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_precos) {
 
         } else if (id == R.id.nav_manage) {
 

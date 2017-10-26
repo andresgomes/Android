@@ -51,9 +51,9 @@ public class LoginActivity extends AppCompatActivity {
                 String UserName = mUserName.getText().toString();
                 String Pass = mPasswordView.getText().toString();
                 if(UserName.equalsIgnoreCase("andre") && Pass.equals("123")){
-                    Intent MainIntent = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(MainIntent);
-                    Toast.makeText(LoginActivity.this, "Sucesso em acessar!", Toast.LENGTH_SHORT).show();
+                    Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(mainIntent);
+                    Toast.makeText(LoginActivity.this, "Bem vindo " + mUserName.getText(), Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(LoginActivity.this, "Desculpe. Verifique os dados de acesso.", Toast.LENGTH_SHORT).show();
                 }
@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent MainIntent = new Intent(LoginActivity.this, EsqueciSenhaActivity.class);
                 startActivity((MainIntent));
-                Toast.makeText(LoginActivity.this,"Digite o email para recuperação:", Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginActivity.this,"Digite o email para recuperação", Toast.LENGTH_LONG).show();
             }
         });
 

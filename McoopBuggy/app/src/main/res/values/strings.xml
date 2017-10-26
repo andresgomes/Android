@@ -3,8 +3,8 @@
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
-    <string name="prompt_userName">UserName</string>
-    <string name="prompt_password">Password</string>
+    <string name="prompt_userName">Usuario/Email</string>
+    <string name="prompt_password">Senha</string>
     <string name="action_sign_in">Login</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
@@ -12,7 +12,7 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Cooperativa de Bugueiros</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
@@ -20,4 +20,5 @@
 
     <string name="cooperativaNome">Cooperativa de Bugueiros</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="btnVoltar">Voltar</string>
 </resources>

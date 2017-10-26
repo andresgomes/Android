@@ -26,7 +26,7 @@
             android:id="@+id/txtEsqueciSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/prompt_password"
+            android:hint="@string/prompt_userName"
             android:imeActionId="@+id/login"
             android:imeActionLabel="@string/action_sign_in_short"
             android:imeOptions="actionUnspecified"
@@ -36,15 +36,15 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
-        android:id="@+id/btnRecAcesso"
+        android:id="@+id/btnRecuperarAcesso"
         android:layout_width="176dp"
         android:layout_height="48dp"
-        android:text="Recuperar acesso"
-        android:layout_marginStart="10dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="-2dp"
-        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"/>
+        android:text="Recuperar acesso"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"/>
 </android.support.constraint.ConstraintLayout>
